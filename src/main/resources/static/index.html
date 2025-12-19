@@ -6,7 +6,7 @@
     <title>광주광역시 지도</title>
     <!-- Kakao 지도 API -->
     <script type="text/javascript"
-        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=내앱키&libraries=services"></script>
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=0377d66fb5b7613c5e65074a10217bb8&libraries=services"></script>
     <!-- XLSX 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="html2canvas.js"></script>
@@ -129,6 +129,8 @@
             // 지적편집도 토글
             document.getElementById('toggleCadastral').addEventListener('click', toggleCadastralLayer);
         };
+
+        document.head.appendChild(kakaoScript);
 
         // 행정구역 검색 및 경계 표시
         function searchRegion() {
